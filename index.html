@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Escola Oficial - CNH Fácil em Goiânia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <style>
+        .whatsapp-pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+        .price-card {
+            transition: all 0.3s ease;
+        }
+        .price-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://i.imgur.com/SkSBeYf.jpeg" alt="Auto Escola Oficial" class="h-12">
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="#beneficios" class="text-gray-600 hover:text-blue-600">Benefícios</a>
+                <a href="#sobre" class="text-gray-600 hover:text-blue-600">Sobre Nós</a>
+                <a href="#planos" class="text-gray-600 hover:text-blue-600">Planos</a>
+                <a href="#depoimentos" class="text-gray-600 hover:text-blue-600">Depoimentos</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="#beneficios" class="block py-2 text-gray-600 hover:text-blue-600">Benefícios</a>
+            <a href="#sobre" class="block py-2 text-gray-600 hover:text-blue-600">Sobre Nós</a>
+            <a href="#planos" class="block py-2 text-gray-600 hover:text-blue-600">Planos</a>
+            <a href="#depoimentos" class="block py-2 text-gray-600 hover:text-blue-600">Depoimentos</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+  <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Chegou a sua vez de tirar a CNH!</h1>
+  <p class="text-lg md:text-xl mb-8">
+    Liberte-se da carona, dos horários de ônibus e da espera.<br>
+    Na CFC Oficial, você conquista sua habilitação com:<br>
+  
+    ✔️ Parcelamento em até 6x sem juros<br>
+    ✔️ Atendimento rápido e sem burocracia<br>
+    ✔️ Instrutores que realmente te preparam para passar de primeira.<br><br>
+    🎯 Não adie mais o seu sonho. Dirigir começa com um passo.
+  </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/5562991701893?text=Olá,%20cheguei%20através%20do%20anúncio,%20gostaria%20de%20fazer%20minha%20inscrição." 
+                       class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-center whatsapp-pulse flex items-center justify-center">
+                        <i class="fab fa-whatsapp text-2xl mr-2"></i> Quero minha CNH no WhatsApp
+                    </a>
+                    <a href="tel:6232713539" 
+                       class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-6 rounded-full text-center flex items-center justify-center">
+                        <i class="fas fa-phone-alt text-xl mr-2"></i> Ligar agora: (62) 3271-3539
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="splide rounded-lg shadow-xl w-full max-w-md" style="aspect-ratio: 9/16; overflow: hidden;">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="https://res.cloudinary.com/dtyszwyp0/image/upload/v1751488409/316883759_698137354931203_6055834591452446570_n_skszzu.jpg" alt="Auto Escola Oficial" class="w-full h-full object-cover">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://res.cloudinary.com/dtyszwyp0/image/upload/v1751488409/191935306_923823065064803_7533659367112145524_n_rk9pfe.jpg" alt="Auto Escola Oficial" class="w-full h-full object-cover">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://res.cloudinary.com/dtyszwyp0/image/upload/v1751488409/308651941_821072492262845_8562663462004147523_n_lojw52.jpg" alt="Auto Escola Oficial" class="w-full h-full object-cover">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://res.cloudinary.com/dtyszwyp0/image/upload/v1751488409/311520711_221168266911160_7552327480874554026_n_tpz1r4.jpg" alt="Auto Escola Oficial" class="w-full h-full object-cover">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://res.cloudinary.com/dtyszwyp0/image/upload/v1751488409/308375705_1083861079165484_2273045621190573978_n_hdpgwq.jpg" alt="Auto Escola Oficial" class="w-full h-full object-cover">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://res.cloudinary.com/dtyszwyp0/image/upload/v1751488408/317200405_813490673289869_6536771305302368309_n_jsz1ss.jpg" alt="Auto Escola Oficial" class="w-full h-full object-cover">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://res.cloudinary.com/dtyszwyp0/image/upload/v1751488408/311504741_1936829126523157_6801289829258651676_n_drilrd.jpg" alt="Auto Escola Oficial" class="w-full h-full object-cover">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://res.cloudinary.com/dtyszwyp0/image/upload/v1751488408/309580084_1231442554099289_1585627479670249204_n_vyjhvy.jpg" alt="Auto Escola Oficial" class="w-full h-full object-cover">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://res.cloudinary.com/dtyszwyp0/image/upload/v1751488408/312341521_1229357310973386_7464269842099877580_n_mupnr4.jpg" alt="Auto Escola Oficial" class="w-full h-full object-cover">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://res.cloudinary.com/dtyszwyp0/image/upload/v1751488408/309874341_635447494630016_5232652595292276275_n_ouytts.jpg" alt="Auto Escola Oficial" class="w-full h-full object-cover">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://res.cloudinary.com/dtyszwyp0/image/upload/v1751488408/316697225_5634607379989618_2678917218102521031_n_edzau3.jpg" alt="Auto Escola Oficial" class="w-full h-full object-cover">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://res.cloudinary.com/dtyszwyp0/image/upload/v1751488408/317061569_2370261576484066_2045611503837611004_n_cdfjzi.jpg" alt="Auto Escola Oficial" class="w-full h-full object-cover">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Por que escolher a Auto Escola Oficial?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Parcelamento em até 6x sem juros</h3>
+                    <p class="text-gray-600">Facilidade no pagamento para você começar seu curso sem preocupações financeiras.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Instrutores experientes e atenciosos</h3>
+                    <p class="text-gray-600">Profissionais qualificados e pacientes para te ensinar com a melhor didática.</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Cursos completos para Categoria A e B</h3>
+                    <p class="text-gray-600">Aprenda a dirigir motos e carros com toda a estrutura necessária para sua formação.</p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Mais de 1.000 alunos habilitados</h3>
+                    <p class="text-gray-600">Tradição e experiência comprovada na formação de condutores em Goiânia.</p>
+                </div>
+                
+                <!-- Benefit 5 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Localização privilegiada em Cidade Jardim</h3>
+                    <p class="text-gray-600">Facilidade de acesso e estrutura completa para seu aprendizado.</p>
+                </div>
+                
+                <!-- Benefit 6 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Tradição desde 1997, credenciada pelo Detran</h3>
+                    <p class="text-gray-600">Mais de 25 anos formando condutores responsáveis e preparados para o trânsito.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Sobre a CFC Oficial</h2>
+                    <p class="text-lg mb-4 text-gray-600">Desde 1997, a Auto Escola Oficial é referência em Goiânia na formação de condutores responsáveis e preparados para o trânsito da vida real.</p>
+                    <p class="text-lg mb-6 text-gray-600">Com estrutura moderna, atendimento acolhedor e metodologia atualizada, somos uma escolha segura para quem busca conquistar sua 1ª habilitação com tranquilidade.</p>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="flex items-start mb-4">
+                            <i class="fas fa-map-marker-alt text-blue-600 text-xl mt-1 mr-3"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">Endereço</h3>
+                                <p class="text-gray-600">Rua da Saúde, 349-431 – Cidade Jardim – Goiânia/GO</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <i class="fas fa-phone-alt text-blue-600 text-xl mt-1 mr-3"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">Telefone</h3>
+                                <p class="text-gray-600">(62) 3271-3539</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fab fa-whatsapp text-blue-600 text-xl mt-1 mr-3"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">WhatsApp</h3>
+                                <a href="https://wa.me/5562991701893?text=Olá,%20cheguei%20através%20do%20anúncio,%20gostaria%20de%20fazer%20minha%20inscrição." class="text-blue-600 hover:underline">Clique aqui para atendimento</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://res.cloudinary.com/dtyszwyp0/image/upload/v1751488965/75054952-211c-4b05-84e1-1f22dffd78bc.png" 
+                         alt="Auto Escola Oficial" 
+                         class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="planos" class="py-16 bg-yellow-400 relative overflow-hidden">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800 flex items-center justify-center gap-2">
+                <span>💳</span> Garanta sua Habilitação com as Melhores Condições!
+            </h2>
+            <p class="text-xl text-center mb-12 text-gray-700">
+                Comece agora e pague em até 6x sem juros diretamente com a CFC Oficial!
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto relative z-10">
+                <!-- Categoria A -->
+                <div class="relative flex flex-col items-center min-h-[370px]">
+                    <div class="w-full bg-black rounded-t-[2rem] rounded-b-none px-6 py-4 flex justify-center items-center">
+                        <span class="text-2xl md:text-3xl font-bold text-yellow-400 tracking-wide text-center uppercase">CATEGORIA A</span>
+                    </div>
+                    <div class="w-full bg-white rounded-b-[2rem] rounded-t-none px-6 pt-6 pb-10 flex flex-col items-center relative z-10">
+                        <div class="text-center mb-2">
+                            <span class="block text-3xl md:text-4xl font-extrabold text-black leading-tight">
+                                <b>6x R$ 233,33</b><br>
+                                ou <b>R$ 1.400,00 à vista!</b>
+                            </span>
+                            <span class="block text-sm text-black mt-2 font-semibold">*exceto exames</span>
+                        </div>
+                    </div>
+                    <!-- Imagem da moto, grande, saindo do card -->
+                    <img src="https://res.cloudinary.com/dtyszwyp0/image/upload/v1751492341/1_pqjrkx.png"
+                         alt="Moto"
+                         class="absolute left-1/2 -translate-x-1/2 -bottom-16 w-72 md:w-80 z-20 pointer-events-none select-none"
+                         style="filter: drop-shadow(0 8px 24px rgba(0,0,0,0.18));">
+                </div>
+                <!-- Categoria B -->
+                <div class="relative flex flex-col items-center min-h-[370px]">
+                    <div class="w-full bg-black rounded-t-[2rem] rounded-b-none px-6 py-4 flex justify-center items-center">
+                        <span class="text-2xl md:text-3xl font-bold text-yellow-400 tracking-wide text-center uppercase">CATEGORIA B</span>
+                    </div>
+                    <div class="w-full bg-white rounded-b-[2rem] rounded-t-none px-6 pt-6 pb-10 flex flex-col items-center relative z-10">
+                        <div class="text-center mb-2">
+                            <span class="block text-3xl md:text-4xl font-extrabold text-black leading-tight">
+                                <b>6x R$ 284,00</b><br>
+                                ou <b>R$ 1.716,00 à vista!</b>
+                            </span>
+                            <span class="block text-sm text-black mt-2 font-semibold">*exceto exames</span>
+                        </div>
+                    </div>
+                    <!-- Imagem do carro, grande, saindo do card -->
+                    <img src="https://res.cloudinary.com/dtyszwyp0/image/upload/v1751492341/2_gqvleo.png"
+                         alt="Carro"
+                         class="absolute left-1/2 -translate-x-1/2 -bottom-16 w-80 md:w-[26rem] z-20 pointer-events-none select-none"
+                         style="filter: drop-shadow(0 8px 24px rgba(0,0,0,0.18));">
+                </div>
+            </div>
+            <!-- Cone decorativo opcional -->
+            <img src="https://i.imgur.com/2yQ2Q7Q.png" alt="Cone" class="absolute right-0 bottom-0 w-32 md:w-48 z-0 opacity-80 pointer-events-none select-none">
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">O que nossos alunos dizem</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex mb-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"Instrutores muito pacientes e profissionais. Fiz Categoria B e passei de primeira!"</p>
+                    <div class="flex items-center">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Juliana Silva</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex mb-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"Super recomendo! Atendimento nota 10 e aulas muito didáticas."</p>
+                    <div class="flex items-center">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Felipe Almeida</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex mb-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"Melhor autoescola de Goiânia! Preço justo e qualidade no ensino."</p>
+                    <div class="flex items-center">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Rafaela Cruz</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">📍 Estamos aqui! Venha nos visitar:</h2>
+            <div class="rounded-lg overflow-hidden shadow-xl">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30571.720841948736!2d-49.35952335820255!3d-16.703629330556915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef423c99bf5f7%3A0xfedc890461c69f8c!2sAuto%20Escola%20Oficial%20-%20Centro%20de%20Forma%C3%A7%C3%A3o%20de%20Condutores%20Oficial!5e0!3m2!1spt-BR!2sbr!4v1751487075856!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Pronto para começar sua jornada no trânsito?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Fale agora mesmo com nossos consultores e dê o primeiro passo para conquistar sua CNH!</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/5562991701893?text=Olá,%20cheguei%20através%20do%20anúncio,%20gostaria%20de%20fazer%20minha%20inscrição." 
+                   class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-center whatsapp-pulse flex items-center justify-center">
+                    <i class="fab fa-whatsapp text-2xl mr-2"></i> Quero minha CNH no WhatsApp
+                </a>
+                <a href="tel:6232713539" 
+                   class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-6 rounded-full text-center flex items-center justify-center">
+                    <i class="fas fa-phone-alt text-xl mr-2"></i> Ligar agora: (62) 3271-3539
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.imgur.com/SkSBeYf.jpeg" alt="Auto Escola Oficial" class="h-10">
+                    </div>
+                    <p class="text-gray-300 mb-4">Centro de Formação de Condutores credenciado pelo Detran, formando motoristas responsáveis desde 1997.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/autoescolaoficialgo" class="text-gray-300 hover:text-white text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5562991701893" class="text-gray-300 hover:text-white text-xl">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contato</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-400 mt-1 mr-3"></i>
+                            <span>Rua da Saúde, 349-431 – Cidade Jardim – Goiânia/GO</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-blue-400 mr-3"></i>
+                            <a href="tel:6232713539" class="hover:underline">(62) 3271-3539</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp text-blue-400 mr-3"></i>
+                            <a href="https://wa.me/5562991701893" class="hover:underline">WhatsApp Oficial</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock text-blue-400 mr-3"></i>
+                            <span>Segunda a Sexta – 8h às 18h</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#beneficios" class="text-gray-300 hover:text-white hover:underline">Benefícios</a></li>
+                        <li><a href="#sobre" class="text-gray-300 hover:text-white hover:underline">Sobre Nós</a></li>
+                        <li><a href="#planos" class="text-gray-300 hover:text-white hover:underline">Planos</a></li>
+                        <li><a href="#depoimentos" class="text-gray-300 hover:text-white hover:underline">Depoimentos</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2025 – CFC Oficial. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/5562991701893?text=Olá,%20cheguei%20através%20do%20anúncio,%20gostaria%20de%20fazer%20minha%20inscrição." 
+           class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center text-3xl shadow-lg whatsapp-pulse">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Initialize Splide carousel
+        new Splide( '.splide', {
+            type       : 'loop',
+            autoplay   : true,
+            interval   : 3000,
+            pauseOnHover: false,
+            arrows: false,
+            pagination: false,
+            cover      : true,
+            heightRatio: 1.77, // 16:9 ratio (1/1.77 ≈ 0.56)
+        } ).mount();
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.price-card, .testimonial-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
